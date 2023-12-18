@@ -1,0 +1,66 @@
+nav {
+  background-color: #c1f2b0;
+  padding: 5px;
+  width: 100%;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+nav a {
+  font-size: 28px;
+  font-weight: 800;
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+}
+
+nav ul {
+  padding-inline: 15em;
+  margin-top: 20px;
+  margin-left: 20px;
+  align-items: center;
+  display: flex;
+  gap: 2em;
+  list-style-type: none;
+}
+
+.nav .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  font-weight: 500;
+}
+
+.nav .menu a {
+  margin: auto;
+  font-size: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #101010;
+}
+
+.nav .menu .login,
+.nav .menu .daftar {
+  color: #FFB534;
+}
+
+.nav .menu .login::after,
+.nav .menu .daftar::after {
+  content: "";
+  margin-top: 5px;
+  display: block;
+}
+
+.nav a:hover {
+  font-weight: bolder;
+  transition: 0.3s ease-in;
+  color: black;
+}
+
+.nav .menu a:hover {
+  color: #65b741;
+  transition: 0.3s ease-in;
+}
+
+.nav .menu a:focus {
+  color: #65b741;
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#65b741" />
+    <meta
+      name="description"
+      content="Wujudkan camping impianmu dengan AdventureRent"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/public/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/public/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/public/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/src/public/site.webmanifest" />
+    <title>AdventureRent</title>
+
+    <link rel="stylesheet" href="/src/styles/card.css" />
+    <link rel="stylesheet" href="/src/styles/footer.css" />
+    <link rel="stylesheet" href="/src/styles/hero.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/nav.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/9b022c2c57.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <nav
+      class="d-flex flex-column m-0 p-0 navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <div class="d-flex flex-row align-items-center mb-2 mt-2 container">
+        <a
+          href="./index.html"
+          class="d-flex align-items-center navbar-brand"
+          style="font-size: 20px; font-weight: bold"
+          ><img
+            src="/src/public/icons/1-removebg.png"
+            class="logo_navbar"
+            alt="Logo Brand"
+            width="100"
+            height="70"
+          />AdventureRent</a
+        ><button
+          aria-controls="basic-navbar-nav"
+          type="button"
+          aria-label="Toggle navigation"
+          class="navbar-toggler collapsed"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="basic-navbar-nav">
+          <div class="ms-lg-auto text-center gap-4 navbar-nav">
+            <a href="#" data-rr-ui-event-key="#" class="nav-link">Promo</a
+            ><a href="#title" data-rr-ui-event-key="#title" class="nav-link"
+              >Rekomendasi</a
+            ><a href="#" data-rr-ui-event-key="#" class="nav-link">Kategori</a
+            ><a
+              href="./about.html"
+              data-rr-ui-event-key="/about"
+              class="nav-link"
+              >Tentang Kami</a
+            >
+          </div>
+          <div class="ms-lg-auto gap-4 navbar-nav">
+            <a
+              role="button"
+              tabindex="0"
+              href="./login.html"
+              class="btn btn-primary"
+              style="
+                font-weight: bold;
+                background-color: transparent;
+                padding: 25px;
+                color: #65b741;
+                width: 100%;
+                height: 50px;
+                border: 1px solid #65b741;
+                border-radius: 0.3rem;
+                box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 2px;
+                transition: all 0.2s ease-in-out 0s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+              "
+              >Masuk</a
+            ><a
+              role="button"
+              tabindex="0"
+              href="./register.html"
+              class="btn btn-primary"
+              style="
+                font-weight: bold;
+                background-color: #65b741;
+                color: white;
+                padding: 25px;
+                width: 100%;
+                height: 50px;
+                border: none;
+                border-radius: 0.3rem;
+                box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 2px;
+                transition: all 0.2s ease-in-out 0s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+              "
+              >Daftar</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+      <div class="py-5 container">
+        <div class="gx-0 mb-5 row" style="width: 100%; height: 70vh">
+          <div class="col-md-6">
+            <div class="d-flex align-items-center h-100">
+              <div>
+                <h1 class="mb-3" style="font-weight: 700">
+                  Selamat datang di
+                  <span style="font-weight: 700; color: #65b741"
+                    >AdventureRent</span
+                  >
+                </h1>
+                <p class="mb-4">
+                  AdventureRent merupakan Website untuk mempermudah dalam Pemesanan
+                  serta Pengelolaan Barang dan Alat Perkemahan di Jakarta
+                </p>
+                <div style="display: flex">
+                  <a
+                    role="button"
+                    tabindex="0"
+                    href="/"
+                    class="me-4 btn btn-primary"
+                    style="
+                      font-weight: bold;
+                      background-color: #65b741;
+                      color: white;
+                      width: 180px;
+                      height: 50px;
+                      margin-top: 1rem;
+                      border: none;
+                      border-radius: 0.3rem;
+                      box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 2px;
+                      transition: all 0.2s ease-in-out 0s;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      text-align: center;
+                    "
+                    >Booking Sekarang</a
+                  ><a
+                    role="button"
+                    tabindex="0"
+                    href="/login"
+                    class="btn btn-primary"
+                    style="
+                      font-weight: bold;
+                      background-color: transparent;
+                      color: #65b741;
+                      width: 180px;
+                      height: 50px;
+                      margin-top: 1rem;
+                      border: 1px solid #65b741;
+                      border-radius: 0.3rem;
+                      box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 2px;
+                      transition: all 0.2s ease-in-out 0s;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      text-align: center;
+                    "
+                    >Daftar Sekarang</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="image d-flex justify-content-center align-items-center h-100"
+            >
+              <img
+                src="/src/public/images/welcome.png"
+                width="370px"
+                height="370px"
+                class=""
+                style="padding: 30px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gx-0 mt-5 mb-5 row">
+          <h4 class="mt-5 mb-5 text-center" style="font-weight: 700">
+            Layanan Kami
+          </h4>
+          <div class="text-center col-md-4">
+            <div class="images-container">
+              <img
+                src="/src/public/images/sewa-barang.png"
+                width="190px"
+                height="190px"
+                class=""
+                style="padding: 30px"
+              />
+            </div>
+            <p
+              class="mb-4 text-center align-content-center"
+              style="font-weight: 700"
+            >
+              Sewa Barang
+            </p>
+          </div>
+          <div class="text-center col-md-4">
+            <div class="images-container">
+              <img
+                src="/src/public/images/kelola-barang.png"
+                width="190px"
+                height="190px"
+                class=""
+                style="padding: 30px"
+              />
+            </div>
+            <p
+              class="mb-4 text-center align-content-center"
+              style="font-weight: 700"
+            >
+              Kelola Barang
+            </p>
+          </div>
+          <div class="text-center col-md-4">
+            <div class="images-container">
+              <img
+                src="/src/public/images/cari-barang.png"
+                width="190px"
+                height="190px"
+                class=""
+                style="padding: 30px"
+              />
+            </div>
+            <p
+              class="mb-4 text-center align-content-center"
+              style="font-weight: 700"
+            >
+              Cari Barang
+            </p>
+          </div>
+        </div>
+        <div class="gx-0 mt-5 mb-5 row">
+          <div class="col-md-6">
+            <div
+              class="image d-flex justify-content-center align-items-center h-100"
+            >
+              <img
+                src="/src/public/images/kenapa-adventurerent.png"
+                width="400px"
+                height="400px"
+                class=""
+                style="padding: 50px"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center h-100">
+              <div class="p-5">
+                <h4 class="mb-2" style="font-weight: 700">
+                  Mengapa Menggunakan
+                  <span style="font-weight: 700; color: #65b741"
+                    >AdventureRent?</span
+                  >
+                </h4>
+                <p class="mb-4">
+                  Bersama AdventureRent sebagai platform mencari, menyewa dan
+                  mengelola yang aman dan praktis. Sebagai perantara antara
+                  penyewa dan pengelola barang yang lebih mudah.
+                </p>
+                <h4 class="mb-2" style="font-weight: 700">
+                  Pengelola Barang
+                </h4>
+                <p class="mb-4">
+                  Membantu anda untuk mengelola sekaligus memasarkan Barang atau Alat Perkemahan.
+                </p>
+                <h4 class="mb-2" style="font-weight: 700">Penyewa Barang</h4>
+                <p class="mb-4">
+                  Membantu anda untuk menemukan sekaligus menyewa Barang atau Alat Perkemahan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gx-0 mt-5 row">
+          <h4 class="mt-5 mb-5 text-center" style="font-weight: 700">
+            Tim Pengembang
+          </h4>
+          <div class="text-center">
+            <div class="images-container">
+              <img
+                src="/src/public/images/solodeveloper.jpg"
+                width="190px"
+                height="190px"
+                class="rounded-circle"
+                style="padding: 30px; object-fit: cover"
+              />
+            </div>
+            <p
+              class="mb-0 text-center align-content-center"
+              style="font-weight: 700"
+            >
+              Ardi Wirya Indarto
+            </p>
+            <p
+              class="mb-4 text-center align-content-center"
+              style="font-size: 14px"
+            >
+              Front-End Developer
+            </p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="footer">
+      <div class="adventurerent-footer-links">
+        <div class="adventurerent-footer-links_div">
+          <h3>AdventureRent</h3>
+          <span
+            >Kec. Kemayoran, Kota Jakarta Pusat DKI Jakarta, Indonesia -
+            10620</span
+          >
+        </div>
+        <div class="adventurerent-footer-links_div">
+          <h4>Produk Kami</h4>
+          <a href="/#promo"><p>Promo</p></a
+          ><a href="/#recommendation"><p>Rekomendasi Barang</p></a
+          ><a href="/#category"><p>Kategori Barang</p></a>
+        </div>
+        <div class="adventurerent-footer-links_div">
+          <h4>Jelajahi kami</h4>
+          <a href="about.html"><p>Tentang Kami</p></a
+          ><a href="/privacy"><p>Privasi</p></a
+          ><a href="/terms"><p>Syarat &amp; Ketentuan</p></a>
+        </div>
+        <div class="adventurerent-footer-links_div">
+          <h4>Kontak Kami</h4>
+          <a
+            rel="noopener noreferrer"
+            href="mailto:adventurerent@gmail.com"
+            target="_blank"
+            ><p><i class="fa fa-envelope"></i> adventurerent@gmail.com</p></a
+          ><a
+            rel="noopener noreferrer"
+            href="tel:+6285261490007"
+            target="_blank"
+            ><p><i class="fa fa-phone"></i> +62 852-6149-0007</p></a
+          ><a
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/Kec.+Kemayoran,+Kota+Jakarta+Pusat,+Daerah+Khusus+Ibukota+Jakarta/@-6.1627265,106.8202899,14z/data=!3m1!4b1!4m6!3m5!1s0x2e69f5a67f1668f7:0xcbffcecd3c26b8d1!8m2!3d-6.1594869!4d106.8541776!16s%2Fg%2F11b_2jk9pz?entry=ttu"
+            target="_blank"
+            ><p>
+              <i class="fa fa-map-marker"></i> AdventureRent, Kota Jakarta Pusat
+            </p></a
+          >
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright &copy; 2023 AdventureRent. All Rights Reserved</p>
+    </footer>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/js/sb-admin-2.min.js"></script>
+    <scribe-shadow
+      id="crxjs-ext"
+      style="
+        position: fixed;
+        width: 0px;
+        height: 0px;
+        top: 0px;
+        left: 0px;
+        z-index: 2147483647;
+        overflow: visible;
+      "
+    ></scribe-shadow>
+  </body>
+</html>

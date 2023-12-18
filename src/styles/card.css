@@ -1,0 +1,61 @@
+.card {
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.card__label {
+  font-size: 2.75em;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.card__label::after {
+  content: "";
+  margin-top: 16px;
+  display: block;
+  border-bottom: 1px solid #65b741;
+}
+
+.location {
+  width: 100%;
+  background-color: rgb(47, 46, 65);
+  color: rgb(255, 255, 255);
+  padding: 7px;
+}
+
+.location > .location-detail {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.dropdown,
+.dropdown-center,
+.dropend,
+.dropstart,
+.dropup,
+.dropup-center {
+  position: relative;
+}
+
+.dropdown-toggle:after {
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  border-top: 0.3em solid;
+  content: "";
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+}
+.dropdown-menu.show {
+    display: block;
+}
+.dropdown-menu-end[data-bs-popper] {
+    left: auto;
+    right: 0;
+}
+.dropdown .dropdown-menu {
+    font-size: .85rem;
+}

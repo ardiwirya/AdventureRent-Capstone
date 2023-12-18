@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#65b741" />
+    <meta
+      name="description"
+      content="Wujudkan camping impianmu dengan AdventureRent"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/public/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/public/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/public/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/src/public/site.webmanifest" />
+    <title>AdventureRent</title>
+
+    <link rel="stylesheet" href="/src/styles/card.css" />
+    <link rel="stylesheet" href="/src/styles/footer.css" />
+    <link rel="stylesheet" href="/src/styles/hero.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/nav.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/9b022c2c57.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav
+      class="d-flex flex-column m-0 p-0 navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <div class="d-flex flex-row align-items-center mb-2 mt-2 container">
+        <a
+          href="./index.html"
+          class="d-flex align-items-center navbar-brand"
+          style="font-size: 20px; font-weight: bold"
+          ><img
+            src="/src/public/icons/1-removebg.png"
+            class="logo_navbar"
+            alt="Logo Brand"
+            width="100"
+            height="70"
+          />AdventureRent</a
+        ><button
+          aria-controls="basic-navbar-nav"
+          type="button"
+          aria-label="Toggle navigation"
+          class="navbar-toggler collapsed"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="basic-navbar-nav">
+          <div class="ms-lg-auto text-center gap-4 navbar-nav">
+            <a href="#" data-rr-ui-event-key="#" class="nav-link">Promo</a
+            ><a href="#title" data-rr-ui-event-key="#title" class="nav-link"
+              >Rekomendasi</a
+            ><a href="#" data-rr-ui-event-key="#" class="nav-link">Kategori</a
+            ><a
+              href="./about.html"
+              data-rr-ui-event-key="/about"
+              class="nav-link"
+              >Tentang Kami</a
+            >
+          </div>
+          <div class="ms-lg-auto gap-4 navbar-nav">
+            <a
+              role="button"
+              tabindex="0"
+              href="./login.html"
+              class="btn btn-primary"
+              style="
+                font-weight: bold;
+                background-color: transparent;
+                padding: 25px;
+                color: #65b741;
+                width: 100%;
+                height: 50px;
+                border: 1px solid #65b741;
+                border-radius: 0.3rem;
+                box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 2px;
+                transition: all 0.2s ease-in-out 0s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+              "
+              >Masuk</a
+            ><a
+              role="button"
+              tabindex="0"
+              href="./register.html"
+              class="btn btn-primary"
+              style="
+                font-weight: bold;
+                background-color: #65b741;
+                color: white;
+                padding: 25px;
+                width: 100%;
+                height: 50px;
+                border: none;
+                border-radius: 0.3rem;
+                box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 2px;
+                transition: all 0.2s ease-in-out 0s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+              "
+              >Daftar</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      style="
+        width: 100%;
+        background-color: #65b741;
+        color: rgb(255, 255, 255);
+        padding: 7px;
+      "
+    >
+      <div
+        class="d-flex flex-row justify-content-end align-items-center mb-2 mt-2 container"
+        style="font-size: 12px"
+      >
+        <p class="mb-0 me-2">Lokasi:</p>
+        <div class="nav-item dropdown">
+          <a
+            id="basic-nav-dropdown"
+            aria-expanded="false"
+            role="button"
+            class="dropdown-toggle nav-link"
+            tabindex="0"
+            href="#"
+            ><span>Jakarta Pusat</span></a
+          >
+          <div
+            aria-labelledby="basic-nav-dropdown"
+            data-bs-popper="static"
+            class="dropdown-menu dropdown-menu-end dropdown-menu-xxxl-start"
+          >
+            <a
+              data-rr-ui-dropdown-item=""
+              class="dropdown-item"
+              role="button"
+              tabindex="0"
+              href="#"
+              >Jakarta Pusat</a
+            ><a
+              data-rr-ui-dropdown-item=""
+              class="dropdown-item"
+              role="button"
+              tabindex="0"
+              href="#"
+              >Jakarta Selatan</a
+            ><a
+              data-rr-ui-dropdown-item=""
+              class="dropdown-item"
+              role="button"
+              tabindex="0"
+              href="#"
+              >Jakarta Utara</a
+            ><a
+              data-rr-ui-dropdown-item=""
+              class="dropdown-item"
+              role="button"
+              tabindex="0"
+              href="#"
+              >Jakarta Barat</a
+            ><a
+              data-rr-ui-dropdown-item=""
+              class="dropdown-item"
+              role="button"
+              tabindex="0"
+              href="#"
+              >Jakarta Timur</a
+            ><a
+              data-rr-ui-dropdown-item=""
+              class="dropdown-item"
+              role="button"
+              tabindex="0"
+              href="#"
+              >Depok</a
+            ><a
+              data-rr-ui-dropdown-item=""
+              class="dropdown-item"
+              role="button"
+              tabindex="0"
+              href="#"
+              >Tangerang</a
+            ><a
+              data-rr-ui-dropdown-item=""
+              class="dropdown-item"
+              role="button"
+              tabindex="0"
+              href="#"
+              >Banten</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img
+            src="/src/public/carousel/carousel1.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 1"
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">Mau Tempat Sewa Murah?</p>
+            <p class="display-1 fw-bolder">
+              Ya di <span>AdventureRent</span> aja!
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img
+            src="/src/public/carousel/carousel2.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 2"
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">
+              Kami punya semua yang anda inginkan
+            </p>
+            <p class="display-1 fw-bolder">Mau Sewa apa?</p>
+          </div>
+        </div>
+
+        <div class="carousel-item c-item">
+          <img
+            src="/src/public/carousel/carousel3.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 3"
+          />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">
+              Make your camping experiences better
+            </p>
+            <p class="display-1 fw-bolder text-capitalize">Make Memories!</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <main id="main_content">
+      <div class="badan">
+        <h3 class="title" id="title">Rekomendasi Barang</h3>
+
+        <div class="list-produk">
+          <img src="/src/public/images/backpack1.png" alt="Jaket Parasut" />
+
+          <h4>Tas 1</h4>
+          <h5>Rp 110.000,-</h5>
+
+          <a class="tombol tombol-detail" href="#">Detail</a>
+          <a class="tombol tombol-beli" href="#">Beli</a>
+        </div>
+
+        <div class="list-produk">
+          <img src="/src/public/images/backpack2.png" alt="Jaket Tactical" />
+
+          <h4>Tas 2</h4>
+          <h5>Rp 130.000,-</h5>
+
+          <a class="tombol tombol-detail" href="#">Detail</a>
+          <a class="tombol tombol-beli" href="#">Beli</a>
+        </div>
+
+        <div class="list-produk">
+          <img
+            src="/src/public/images/backpack3.png"
+            alt="Jaket Bomber Stylish"
+          />
+
+          <h4>Tas 3</h4>
+          <h5>Rp 170.000,-</h5>
+
+          <a class="tombol tombol-detail" href="#">Detail</a>
+          <a class="tombol tombol-beli" href="#">Beli</a>
+        </div>
+
+        <div class="list-produk">
+          <img src="/src/public/images/backpack1.png" alt="Jaket Naruto" />
+
+          <h4>Tas 4</h4>
+          <h5>Rp 150.000,-</h5>
+
+          <a class="tombol tombol-detail" href="#">Detail</a>
+          <a class="tombol tombol-beli" href="#">Beli</a>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <div class="adventurerent-footer-links">
+        <div class="adventurerent-footer-links_div">
+          <h3>AdventureRent</h3>
+          <span
+            >Kec. Kemayoran, Kota Jakarta Pusat DKI Jakarta, Indonesia -
+            10620</span
+          >
+        </div>
+        <div class="adventurerent-footer-links_div">
+          <h4>Produk Kami</h4>
+          <a href="#promo"><p>Promo</p></a
+          ><a href="#title"><p>Rekomendasi Barang</p></a
+          ><a href="#category"><p>Kategori Barang</p></a>
+        </div>
+        <div class="adventurerent-footer-links_div">
+          <h4>Jelajahi kami</h4>
+          <a href="about.html"><p>Tentang Kami</p></a
+          ><a href="#privacy"><p>Privasi</p></a
+          ><a href="#terms"><p>Syarat &amp; Ketentuan</p></a>
+        </div>
+        <div class="adventurerent-footer-links_div">
+          <h4>Kontak Kami</h4>
+          <a
+            rel="noopener noreferrer"
+            href="mailto:adventurerent@gmail.com"
+            target="_blank"
+            ><p><i class="fa fa-envelope"></i> adventurerent@gmail.com</p></a
+          ><a
+            rel="noopener noreferrer"
+            href="tel:+6285261490007"
+            target="_blank"
+            ><p><i class="fa fa-phone"></i> +62 852-6149-0007</p></a
+          ><a
+            rel="noopener noreferrer"
+            href="https://www.google.com/maps/place/Kec.+Kemayoran,+Kota+Jakarta+Pusat,+Daerah+Khusus+Ibukota+Jakarta/@-6.1627265,106.8202899,14z/data=!3m1!4b1!4m6!3m5!1s0x2e69f5a67f1668f7:0xcbffcecd3c26b8d1!8m2!3d-6.1594869!4d106.8541776!16s%2Fg%2F11b_2jk9pz?entry=ttu"
+            target="_blank"
+            ><p>
+              <i class="fa fa-map-marker"></i> AdventureRent, Kota Jakarta Pusat
+            </p></a
+          >
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Copyright &copy; 2023 AdventureRent. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
