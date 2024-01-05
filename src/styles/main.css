@@ -124,11 +124,14 @@ textarea {
   color: #fff;
 }
 
-
 .tombol-detail {
   background-color: #ffb534;
 }
 
 .tombol-beli {
   background-color: #65b741;
+}
+
+input[type="radio"] {
+  margin-right: 6em;
 }

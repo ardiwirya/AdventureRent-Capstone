@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#65b741" />
+    <meta
+      name="description"
+      content="Wujudkan camping impianmu dengan AdventureRent"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/public/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/public/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/public/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/src/public/site.webmanifest" />
+    <title>AdventureRent</title>
+
+    <link rel="stylesheet" href="/src/styles/card.css" />
+    <link rel="stylesheet" href="/src/styles/footer.css" />
+    <link rel="stylesheet" href="/src/styles/hero.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/nav.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/9b022c2c57.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <nav
+        class="d-flex flex-column m-0 p-0 navbar navbar-expand-lg navbar-light bg-light"
+      >
+        <div class="d-flex flex-row align-items-center mb-2 mt-2 container">
+          <a
+            href="/src/index.html"
+            class="d-flex align-items-center navbar-brand"
+            style="font-size: 20px; font-weight: bold"
+            ><img
+              src="/src/public/icons/1-removebg.png"
+              class="logo_navbar"
+              alt="Logo Brand"
+              width="100"
+              height="70"
+            />AdventureRent</a
+          ><button
+            aria-controls="basic-navbar-nav"
+            type="button"
+            aria-label="Toggle navigation"
+            class="navbar-toggler collapsed"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="basic-navbar-nav">
+            <div class="ms-lg-auto text-center gap-4 navbar-nav">
+              <a href="#" data-rr-ui-event-key="#" class="nav-link">Promo</a
+              ><a href="#" data-rr-ui-event-key="#title" class="nav-link"
+                >Rekomendasi</a
+              ><a href="#" data-rr-ui-event-key="#" class="nav-link">Kategori</a
+              ><a
+                href="/src/pages/about.html"
+                data-rr-ui-event-key="/about"
+                class="nav-link"
+                >Tentang Kami</a
+              >
+            </div>
+            <div class="ms-lg-auto gap-4 navbar-nav">
+              <a
+                role="button"
+                tabindex="0"
+                href="/src/pages/login.html"
+                class="btn btn-primary"
+                style="
+                  font-weight: bold;
+                  background-color: transparent;
+                  padding: 25px;
+                  color: #65b741;
+                  width: 100%;
+                  height: 50px;
+                  border: 1px solid #65b741;
+                  border-radius: 0.3rem;
+                  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 2px;
+                  transition: all 0.2s ease-in-out 0s;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                "
+                >Masuk</a
+              ><a
+                role="button"
+                tabindex="0"
+                href="/src/pages/register.html"
+                class="btn btn-primary"
+                style="
+                  font-weight: bold;
+                  background-color: #65b741;
+                  color: white;
+                  padding: 25px;
+                  width: 100%;
+                  height: 50px;
+                  border: none;
+                  border-radius: 0.3rem;
+                  box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 2px;
+                  transition: all 0.2s ease-in-out 0s;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                "
+                >Daftar</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="py-5 container">
+        <div class="justify-content-center align-items-center row">
+          <div class="text-center mb-3 col-lg-8 col-md-12">
+            <img
+              src="/src/public/product/sleeping-bag1.png"
+              alt="detail barang"
+              class="img-fluid"
+              style="width: 30%"
+            />
+          </div>
+          <div class="text-center col-lg-4 col-md-12">
+            <div class="row">
+              <div class="mb-3 col-lg-12 col-md-6 col-sm-6 col-6">
+                <img
+                  src="/src/public/product/sleeping-bag2.png"
+                  alt="detail barang"
+                  class="img-fluid"
+                  style="width: 35%"
+                />
+              </div>
+              <div class="mb-3 col-lg-12 col-md-6 col-sm-6 col-6">
+                <img
+                  src="/src/public/product/sleeping-bag3.png"
+                  alt="detail barang"
+                  class="img-fluid"
+                  style="width: 40%"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="informations-account"
+          style="height: fit-content; overflow: hidden; margin: auto"
+        >
+          <h3 class="mb-0" style="padding: 10px 0px 5px">Sleeping Bag</h3>
+          <p class="mb-0">
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 384 512"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              style="color: #65b741; margin-right: 5px; margin-bottom: 3px"
+            >
+              <path
+                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
+              ></path></svg
+            >Depok |
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 576 512"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              style="color: #65b741; margin-right: 5px; margin-bottom: 3px"
+            >
+              <path
+                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+              ></path></svg
+            >0 | Tersewa 0 | Buka 07.00 - 22.00 WIB
+          </p>
+          <h2 class="mb-0" style="padding: 10px 0px 0px">
+            <strong>Rp70.000</strong>/hari
+          </h2>
+        </div>
+        <div
+          class="mb-4 mt-4"
+          style="
+            display: flex;
+            height: fit-content;
+            overflow: hidden;
+            margin: auto;
+          "
+        >
+          <img
+            src="/src/public/images/icon-profile.png"
+            alt="icon profile"
+            class="d-block img-fluid"
+            style="height: 70px; width: 70px"
+          />
+          <div
+            class="informations d-flex justify-content-center align-items-start flex-column h-auto"
+          >
+            <p class="mb-0" style="margin-left: 15px">
+              <span style="font-weight: 700; font-size: 18px"
+                >Gunung Salak |</span
+              >
+              <a
+                href="https://wa.me/085261490007"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="
+                  display: inline;
+                  align-items: center;
+                  text-decoration: none;
+                "
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="color: #65b741; height: 18px; width: 18px"
+                >
+                  <path
+                    d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.767L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14h-7.277L9 18.233V16H4V4h16v12z"
+                  ></path>
+                  <path d="M7 7h10v2H7zm0 4h7v2H7z"></path>
+                </svg>
+                <span style="font-weight: 600; font-size: 18px; color: #65b741"
+                  >Chat Sekarang</span
+                ></a
+              >
+            </p>
+            <p
+              class="mb-0"
+              style="margin-left: 15px; font-size: 12px; align-items: center"
+            >
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGwSURBVHgBvZZNUsJAEIVfD7rnCFiK5U48gSBIuYQTCEfwBOBN9AS4tCwj8QTAzhItc4TsSRi7kYQfMcSQzFcVkmGm8pimu+cRYlDTR2UN3SCocx4W+MrPp1y+hhrTEYEenunD3vYuipq81MUW3zr6R2Qr/DKHhbtP9H4fseY3V/qk4MHv8WMJCRDhHCaVR3Kc9Tm1/kVVH1+z2CCpmCAR8bA/qOvDxoYfs0AWTKF6SBENallLIQ4F52GUneWRLu4eJmdBeMOQ+vD7GYgJeQ5vGLWZoGRj3ExMSKnOuREKMh1kDNdxV+4kRc23PoygK0o6CAwhWorb1SkMIa1R/sPEBZ6AgghmUQp/kVcwjAi6MIfLgtqBMfRQyuIVhmCtkZKTGoYQrdlpUdXFL8q2l8oZ6Vg0PlDzwS0yh7qzz2BY08WdTvkogt3Jc1iHHnJNZFMirs/+JhiEgja9OVPgBinDFrJtL5mplU7zQuM7XpDWTl3eQNuiz5Uq2GgTy+xvcmw5dsjcoYdJ095gEyON8AVbD17QiSssySHZaP3XCK+zsPrEZydJJi9Zfe1It4pr9b8BL6Oa5uBki3MAAAAASUVORK5CYII="
+                alt="online"
+                class=""
+                style="
+                  height: 15px;
+                  width: 15px;
+                  margin-right: 5px;
+                  margin-bottom: 3px;
+                "
+              />Offline | Terakhir online 2 hari yang lalu
+            </p>
+            <p class="mb-0" style="margin-left: 15px; font-size: 12px">
+              Jl. Arif Rahman Hakim, Depok
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-4" style="height: fit-content; margin: auto">
+          <table>
+            <thead>
+              <tr style="border: 3px solid #65b741">
+                <th>Hari, Tanggal</th>
+                <th>Waktu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border: 2px solid #65b741">
+                <td>Senin, 8 Januari 2024</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      name="waktu0"
+                      type="radio"
+                      class="form-check-input"
+                      value="1 - 3 Hari"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >1 - 3 Hari</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      name="waktu0"
+                      type="radio"
+                      class="form-check-input"
+                      value="3 - 5 Hari"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >3 - 5 Hari</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      name="waktu0"
+                      type="radio"
+                      class="form-check-input"
+                      value="1 Minggu"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >1 Minggu</label
+                    >
+                  </div>
+                </td>
+              </tr>
+              <tr style="border: 2px solid #65b741">
+                <td>Rabu, 10 Januari 2024</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      name="waktu1"
+                      type="radio"
+                      class="form-check-input"
+                      value="1 - 3 Hari"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >1 - 3 Hari</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      name="waktu1"
+                      type="radio"
+                      class="form-check-input"
+                      value="3 - 5 Hari"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >3 - 5 Hari</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      name="waktu1"
+                      type="radio"
+                      class="form-check-input"
+                      value="1 Minggu"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >1 Minggu</label
+                    >
+                  </div>
+                </td>
+              </tr>
+              <tr style="border: 2px solid #65b741">
+                <td>Jum'at, 12 Januari 2024</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      name="waktu2"
+                      type="radio"
+                      class="form-check-input"
+                      value="1 - 3 Hari"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >1 - 3 Hari</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      name="waktu2"
+                      type="radio"
+                      class="form-check-input"
+                      value="3 - 5 Hari"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >3 - 5 Hari</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      name="waktu2"
+                      type="radio"
+                      class="form-check-input"
+                      value="1 Minggu"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >1 Minggu</label
+                    >
+                  </div>
+                </td>
+              </tr>
+              <tr style="border: 2px solid #65b741">
+                <td>Minggu, 14 Januari 2024</td>
+                <td>
+                  <div class="form-check">
+                    <input
+                      name="waktu3"
+                      type="radio"
+                      class="form-check-input"
+                      value="1 - 3 Hari"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >1 - 3 Hari</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      name="waktu3"
+                      type="radio"
+                      class="form-check-input"
+                      value="3 - 5 Hari"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >3 - 5 Hari</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      name="waktu3"
+                      type="radio"
+                      class="form-check-input"
+                      value="1 Minggu"
+                    /><label
+                      title=""
+                      class="form-check-label"
+                      style="margin-bottom: 30px"
+                      >1 Minggu</label
+                    >
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button
+            type="button"
+            class="btn btn-primary"
+            style="
+              font-weight: bold;
+              background-color: #65b741;
+              color: white;
+              width: 100%;
+              height: 50px;
+              margin-top: 1rem;
+              border: none;
+              border-radius: 0.3rem;
+              box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 2px;
+              transition: all 0.2s ease-in-out 0s;
+            "
+          >
+            Sewa Sekarang
+          </button>
+        </div>
+        <div
+          class="mt-1"
+          style="height: fit-content; overflow: hidden; margin: auto"
+        >
+          <h5 class="mb-3" style="font-weight: 700">Ulasan</h5>
+          <div
+            class="d-flex align-items-center justify-content-between margin bg-dark px-3"
+            style="height: 5rem"
+          >
+            <div class="d-flex align-items-center text-white">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 576 512"
+                color="#FF7315"
+                height="35"
+                width="35"
+                xmlns="http://www.w3.org/2000/svg"
+                style="color: #65b741"
+              >
+                <path
+                  d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                ></path>
+              </svg>
+              <h3 class="m-0 mx-2">0</h3>
+              <h5 class="m-0">dari 5</h5>
+            </div>
+            <div class="d-none d-xxl-flex">
+              <div role="group" class="btn-group">
+                <button
+                  type="button"
+                  class="ml-auto btn-rating mx-2 selected btn btn-light"
+                  style="background-color: #65b741; color: white; border: none"
+                >
+                  Semua</button
+                ><button
+                  type="button"
+                  class="ml-auto btn-rating mx-2 btn btn-light"
+                  style="background-color: white; color: black; border: none"
+                >
+                  5 Bintang (0)</button
+                ><button
+                  type="button"
+                  class="ml-auto btn-rating mx-2 btn btn-light"
+                  style="background-color: white; color: black; border: none"
+                >
+                  4 Bintang (0)</button
+                ><button
+                  type="button"
+                  class="ml-auto btn-rating mx-2 btn btn-light"
+                  style="background-color: white; color: black; border: none"
+                >
+                  3 Bintang (0)</button
+                ><button
+                  type="button"
+                  class="ml-auto btn-rating mx-2 btn btn-light"
+                  style="background-color: white; color: black; border: none"
+                >
+                  2 Bintang (0)</button
+                ><button
+                  type="button"
+                  class="ml-auto btn-rating mx-2 btn btn-light"
+                  style="background-color: white; color: black; border: none"
+                >
+                  1 Bintang (0)</button
+                ><button
+                  type="button"
+                  class="ml-auto btn-rating mx-2 btn btn-light"
+                  style="background-color: white; color: black; border: none"
+                >
+                  Dengan Komentar (0)
+                </button>
+              </div>
+            </div>
+            <div class="d-flex d-xxl-none">
+              <div
+                role="group"
+                class="dropdown btn-group"
+                style="background-color: #65b741; color: rgb(255, 255, 255)"
+              >
+                <button
+                  type="button"
+                  id="bg-nested-dropdown"
+                  aria-expanded="false"
+                  class="dropdown-toggle btn btn-#ffffff"
+                >
+                  Selengkapnya...
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="comment-section pt-5"></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="adventurerent-footer-links">
+          <div class="adventurerent-footer-links_div">
+            <h3>AdventureRent</h3>
+            <span
+              >Kec. Kemayoran, Kota Jakarta Pusat DKI Jakarta, Indonesia -
+              10620</span
+            >
+          </div>
+          <div class="adventurerent-footer-links_div">
+            <h4>Produk Kami</h4>
+            <a href="#promo"><p>Promo</p></a
+            ><a href="#title"><p>Rekomendasi Barang</p></a
+            ><a href="#category"><p>Kategori Barang</p></a>
+          </div>
+          <div class="adventurerent-footer-links_div">
+            <h4>Jelajahi kami</h4>
+            <a href="/src/pages/about.html"><p>Tentang Kami</p></a
+            ><a href="#privacy"><p>Privasi</p></a
+            ><a href="#terms"><p>Syarat &amp; Ketentuan</p></a>
+          </div>
+          <div class="adventurerent-footer-links_div">
+            <h4>Kontak Kami</h4>
+            <a
+              rel="noopener noreferrer"
+              href="mailto:adventurerent@gmail.com"
+              target="_blank"
+              ><p><i class="fa fa-envelope"></i> adventurerent@gmail.com</p></a
+            ><a
+              rel="noopener noreferrer"
+              href="tel:+6285261490007"
+              target="_blank"
+              ><p><i class="fa fa-phone"></i> +62 852-6149-0007</p></a
+            ><a
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/place/Kec.+Kemayoran,+Kota+Jakarta+Pusat,+Daerah+Khusus+Ibukota+Jakarta/@-6.1627265,106.8202899,14z/data=!3m1!4b1!4m6!3m5!1s0x2e69f5a67f1668f7:0xcbffcecd3c26b8d1!8m2!3d-6.1594869!4d106.8541776!16s%2Fg%2F11b_2jk9pz?entry=ttu"
+              target="_blank"
+              ><p>
+                <i class="fa fa-map-marker"></i> AdventureRent, Kota Jakarta
+                Pusat
+              </p></a
+            >
+            <div class="footer-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a
+                href="https://www.instagram.com/ardiwirya_/"
+                rel="noopener noreferrer"
+                ><i class="fa fa-instagram"></i
+              ></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="https://github.com/ardiwirya" rel="noopener noreferrer"
+                ><i class="fa fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ardiwirya/"
+                rel="noopener noreferrer"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Copyright &copy; 2024 | AdventureRent</p>
+      </footer>
+    </div>
+  </body>
+</html>
