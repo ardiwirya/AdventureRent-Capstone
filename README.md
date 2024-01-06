@@ -6,7 +6,6 @@ untuk Capstone Project Studi Independen x Dicoding Indonesia Cycle 5
 ## Sekilas
 
 ![Screencapture](/src/public/images/Screenshot1.png)
-
 ![Screencapture](/src/public/images/Screenshot2.png)
 
 Aplikasi Penyewaan Barang Kemah
